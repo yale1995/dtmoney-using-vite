@@ -8,35 +8,29 @@ createServer({
     transaction: Model,
   },
 
-  seeds(server) {
+  seeds(server){
     server.db.loadData({
-      transactions: [
+      transactions:[
         {
-          id: 1,
-          title: "Freelance de website",
-          type: "deposit",
-          category: "Dev",
+          id:1,
+          title: 'Freelance de Website',
+          type: 'deposit',
+          category: 'dev',
           amount: 6000,
-          createdAt: new Date("2021-02-12 09:00:00"),
+          createdAt: new Date('2021-02-12 09:00:00')
+
         },
         {
-          id: 2,
-          title: "Aluguel",
-          type: "withdraw",
-          category: "Casa",
+          id:2,
+          title: 'Aluguel',
+          type: 'withdraw',
+          category: 'Casa',
           amount: 1100,
-          createdAt: new Date("2021-02-12 09:00:00"),
-        },
-        {
-          id: 3,
-          title: "Motel",
-          type: "withdraw",
-          category: "Diversão",
-          amount: 100,
-          createdAt: new Date("2021-02-12 09:00:00"),
-        },
-      ],
-    });
+          createdAt: new Date('2021-02-12 11:00:00'),
+
+        }
+      ]
+    })
   },
 
   routes() {
